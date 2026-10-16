@@ -1,9 +1,0 @@
-{
-  "name": "NEXUS EDU",
-  "short_name": "NEXUS",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#f3fbf7",
-  "theme_color": "#1fb26b",
-  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
-}
