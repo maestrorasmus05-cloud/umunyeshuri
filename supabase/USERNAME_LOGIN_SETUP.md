@@ -26,6 +26,6 @@ This repository's existing login uses Supabase Auth email/password. Supabase Aut
 
 ## Notes
 - Usernames are 3–24 characters and accept letters, numbers, underscores, and periods. Matching is case-insensitive.
-- Existing accounts are backfilled with a generated `user_<id>` username unless their auth metadata already has a username. Existing users should continue signing in with email until a username is assigned.
+- Existing accounts are backfilled with a generated `user_<id>` username to avoid collisions with legacy metadata. Existing users can continue signing in with email; new signups store the chosen username.
 - Deploying code to GitHub alone does not deploy the SQL migration or Edge Function. The Supabase steps above are required.
 - For production, also configure Supabase Edge Function rate limits / gateway protections and monitor failed authentication attempts.
